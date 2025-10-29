@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SetUpSprint</title>
+        <title>DragonStone</title>
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/style1.css">
-        <link rel="icon" href="../assets/images/SetUpSprint.svg" type="image/icon type">
+        <link rel="icon" href="../assets/images/DragonStone.svg" type="image/icon type">
     </head>
     <body>
         <!-- Header -->
@@ -39,13 +39,23 @@
 
                 <div class="pr-detail-price">
                     <?php
+                    // Check if Special Price is available
                     if ($product['SpecialPrice']!=0){
                             echo "<div style='display:flex'>";
-                            echo"<div class='price-d'>".$product["SpecialPrice"]." DT</div>";
-                            echo "<div class='price-bd'>".$product['OldPrice']." DT</div>";
-                            echo"<div class='discount'><p>".$product['Discount']." DT</p></div>" ;
+                            
+                            // Special Price 
+                            echo"<div class='price-d'>ZAR ".$product["SpecialPrice"]."</div>";
+                            
+                            // Old Price 
+                            echo "<div class='price-bd'>ZAR ".$product['OldPrice']."</div>";
+                            
+                            // Discount 
+                            echo"<div class='discount'><p>ZAR ".$product['Discount']."</p></div>" ;
                             echo "</div>";
-                        } else echo "<div class='price-d'>".$product['OldPrice']." DT</div>";
+                        } else {
+                            // Only Old Price 
+                            echo "<div class='price-d'>ZAR ".$product['OldPrice']."</div>";
+                        }
                     
                     ?>
                 </div>
@@ -77,6 +87,4 @@
         
 
         <?php include "../includes/footer.php" ?>
-        <script src="../assets/js/script2.js"></script>
-</body>
-</html>
+        <script

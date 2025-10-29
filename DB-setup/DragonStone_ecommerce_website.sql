@@ -22,8 +22,8 @@ CREATE TABLE clients (
 );
 
 INSERT INTO clients (FirstName, LastName, Email, PasswordHash, Address, PhoneNumber) VALUES
-('test', 'test', 'user@test.com', 'user', 'Avenue Habib Bourguiba', '98054873'),
-('test', 'test', 'a@test.com', '0', 'Avenue Habib Bourguiba', '00000000');
+('test', 'test', 'user@test.com', 'user', 'Sandton Johannesburg', '98054873'),
+('test', 'test', 'a@test.com', '0', 'Menlo Park Pretoria', '00000000');
 
 
 CREATE TABLE orders (
