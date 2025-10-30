@@ -5,10 +5,16 @@ include "../includes/database.php";
 
 $products_in_cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
 $products = array();
-$subtotal = 7.00;
-$discounted =0.00 ;
+
+// Define a fixed delivery fee
+$delivery_fee = 100.00;
+
+// Initialize running totals
+$running_item_subtotal = 0.00; // This will hold the price of items *after* discounts 
+$discounted = 0.00;
 $before_discount = 0.00;
-$per=0;
+$per = 0;
+
 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
     $array_to_question_marks = implode(',', array_fill(0, count($products_in_cart), '?')); // (?,?,?,? ...) for the sql query
     $stmt = $connect->prepare('SELECT * FROM product WHERE ProductID IN (' . $array_to_question_marks . ')');
@@ -18,13 +24,18 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
     $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($products as $product) {
-        // calculating the subtotal price / discount
         $ID = $product['ProductID'];
-        $before_discount+=$product['OldPrice']*(int)$products_in_cart[$ID] ;
-        if ($product['SpecialPrice']!=0) {
-            $subtotal+=$product['SpecialPrice']*(int)$products_in_cart[$ID] ;
-            $discounted+=$product['Discount']*(int)$products_in_cart[$ID] ;
-        } else $subtotal+=$product['OldPrice']*(int)$products_in_cart[$ID] ;
+        $quantity = (int)$products_in_cart[$ID];
+        
+        // calculating the subtotal price / discount
+        $before_discount += $product['OldPrice'] * $quantity;
+        
+        if ($product['SpecialPrice'] != 0) {
+            $running_item_subtotal += $product['SpecialPrice'] * $quantity;
+            $discounted += $product['Discount'] * $quantity;
+        } else {
+            $running_item_subtotal += $product['OldPrice'] * $quantity;
+        }
 ?>
         <!-- displaying product items in cart -->
         <div class="cart-item">
@@ -32,7 +43,7 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
             <div><img src="<?php echo $product['ImageURL'] ?>" width="100dvw" height="100dvh"></div>
             <div class="cart-item-info">
                 <h2><?php echo $product['ProductName']?></h2>
-                <h2><?php echo ($product['SpecialPrice']!=0)?$product['SpecialPrice']:  $product['OldPrice']?> DT</h2>
+                <h2><?php echo ($product['SpecialPrice']!=0)?$product['SpecialPrice']:  $product['OldPrice']?> ZAR</h2>
             </div>
         </div>
         <div class="right-cart-item">
@@ -52,10 +63,25 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
         </div>
         </div>
 <?php } 
-$_SESSION['total-bd'] = $before_discount ;
-$_SESSION['ds'] = $discounted ;
-$per = ($discounted / $before_discount)*100 ;
+
+// Final Calculation Steps:
+// 1. Calculate the discount percentage
+$per = ($before_discount > 0) ? ($discounted / $before_discount) * 100 : 0;
+
+// 2. Calculate the final total (Item Subtotal - Discount + Delivery Fee)
+$subtotal = $running_item_subtotal + $delivery_fee; 
+
+// 3. Update Session variables
+$_SESSION['total-bd'] = $before_discount;
+$_SESSION['ds'] = $discounted;
 $_SESSION['per'] = $per;
-$_SESSION['total'] = $subtotal ;
-} else echo "<h1>Cart Empty</h1>" ?>
+$_SESSION['total'] = $subtotal; // This now holds the correct final total
+
+} else {
+    // If cart is empty, set subtotal to 0 and display message
+    $subtotal = 0.00;
+    echo "<h1>Cart Empty</h1>";
+} 
+?>
+
 

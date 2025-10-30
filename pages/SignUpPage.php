@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/style1.css">
 
-        <link rel="icon" href="../assets/images/DragonStone.svg" type="image/icon type">
+        <link rel="icon" href="../assets/images/logo.png" type="image/icon type">
     </head>
 <body>
     <section style="display:flex;align-items:center;">

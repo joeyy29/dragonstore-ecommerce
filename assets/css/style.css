@@ -56,15 +56,19 @@ ul li a {
 .hero-section {
     padding-top: 1%;
     margin-bottom: 0;
-    background-image: url(../images/hero-bg.png);
+
+    background-image: url(../images/homepage.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    
+    background-size: contain;
     height:100dvh;
     
 }
 .hero-left {
    margin: 2dvh 10%;
+   margin-left: auto;
+    width: 40%; 
 }
 .hero-text {
     font-size: 5.25rem;

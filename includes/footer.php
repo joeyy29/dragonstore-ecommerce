@@ -3,7 +3,7 @@
     <div class="footer-container">
         <div class="footer-item">
             
-            <p>Elevate your space with precision.<br> Discover top-tier components tailored<br> to your needs.Build your dream<br> space with DragonStone.</p>
+            <p>Elevate your space with precision.<br> Discover top-tier eco-friendly items tailored<br> to your needs.Build your dream<br> space with DragonStone.</p>
            
             <p class="title">Company</p>
             <ul>

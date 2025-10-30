@@ -1,7 +1,7 @@
     <?php
 
 $host = 'localhost' ;
-$dbname = 'setupsprint_ecommerce_website';
+$dbname = 'DragonStone_ecommerce_website';
 $username = 'root';
 $password = '';
 

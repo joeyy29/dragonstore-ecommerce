@@ -4,14 +4,14 @@
     <link rel="stylesheet" href="admin.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/images/SetUpSprint.svg" type="image/icon type">
-    <title>SetUpSprint</title>
+    <link rel="icon" href="../assets/images/logo.png" type="image/icon type">
+    <title>DragonStone</title>
 </head>
 <body>
     <nav>
         <div>
-          
-          <img src="../assets/images/SetUpSprint.svg" class="logo"></img>
+
+          <img src="../assets/images/logo.png" class="logo"></img>
         </div>
         <div style="flex-basis: auto;">
           <form class="search-form">

@@ -19,7 +19,7 @@
                     <td class="pr-i"><img src="<?php echo $product['ImageURl']?>" width="80dvw" height="70dvh"></td>
                     <td><?php echo $product['ProductName']?></td>
                     <td><?php echo $product['Quantity']?></td>
-                    <td><?php echo $product['Subtotal']?> DT</td>
+                    <td><?php echo $product['Subtotal']?> ZAR</td>
                     <td><?php echo $order['OrderDate']?></td>
                     <td><?php echo $order['OrderStatus']?></td>
                 </tr>
@@ -27,7 +27,7 @@
             <!-- order detail: total money -->
                 <tr class="line">
                     <td>Total : </td>
-                    <td><?php echo $order['TotalAmount']?> DT</td>
+                    <td><?php echo $order['TotalAmount']?> ZAR</td>
                 </tr>
     <?php } 
         

@@ -8,7 +8,7 @@
         <title>DragonStone</title>
         <link rel="stylesheet" href="../assets/css/style1.css">
         <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="icon" href="../assets/images/DragonStone.svg" type="image/icon type">
+        <link rel="icon" href="../assets/images/logo.png" type="image/icon type">
         <script src="../assets/js/scripts.js"></script>
     </head>
     <body>
@@ -50,7 +50,7 @@
                         <h4>Name :</h4>
                         <h4>Email :</h4>
                         <h4>Phone Number :</h4>
-                        <h4>Default Adress :</h4>
+                        <h4>Default Address :</h4>
                     </div>
                     <div class="info-details">
                         <?php

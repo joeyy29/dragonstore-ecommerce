@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DragonStone</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/images/SetUpSprint.svg" type="image/icon type">
+    <link rel="icon" href="assets/images/logo.png" type="image/icon type">
     <script src="assets/js/scripts.js"></script>
     
 </head>
@@ -56,15 +56,10 @@
     <!-- brands Section -->
     <section class="brands-section">
         <div class="br1">
-            <div class="brand"><img src="assets/images/amd.svg"/></div>
-            <div class="brand"><img src="assets/images/logitech.svg"/></div>
-            <div class="brand"><img src="assets/images/jbl.svg"/></div>
-            <div class="brand"><img src="assets/images/nvidia.svg"/></div>
-        </div>
-        <div class="br1">
-            <div class="brand"><img src="assets/images/intel.svg"/></div>
-            <div class="brand"><img src="assets/images/msi.svg"/></div>
-            <div class="brand"><img src="assets/images/lenovo.svg"/></div>
+          
+           
+            <div class="brand"><img src="assets/images/logo.png"/></div>
+         
         </div>
     </section>
     <!-- ------------------------------------------------------------------------------------------------------- -->
@@ -126,7 +121,7 @@
                         <h3>Tariro Ngundu</h3>
                         <img src="assets/images/check.svg" alt="" height="20px"/>
                     </div>
-                    <p>As someone new to building PCs, I was a bit intimidated by the process at first. However, the ecommerce website for PC components made it incredibly simple. The user-friendly layout, combined with helpful guides and recommendations, gave me the confidence to select the right components for my needs.”</p>
+                    <p>"As someone new to online shopping, I was a bit intimidated by the process at first. However, this website made it incredibly simple. The user-friendly layout, and the helpful recommendations, gave me the confidence to select the right products for my baby.”</p>
                 </div>
                 </li>
                 <li><div class="feedback">
@@ -135,7 +130,7 @@
                         <h3>Zandile Ndhlovu</h3>
                         <img src="assets/images/check.svg" alt="" height="20px"/>
                     </div>
-                    <p>"Shopping for PC components has never been easier! With a vast selection of high-quality products and seamless navigation, I was able to find everything I needed to build my dream gaming rig. The website's intuitive interface made browsing through different categories a breeze"</p>
+                    <p>"Shopping has never been easier! With a vast selection of high-quality products and seamless navigation, I was able to find everything I needed to design my dream home, from the kitchen area all the way to outdoor bits and bobs."</p>
                 </div>
                 </li>
                 <li>
@@ -145,7 +140,7 @@
                         <h3>Tanatswa Mombe</h3>
                         <img src="assets/images/check.svg" alt="" height="20px"/>
                     </div>
-                    <p>I've been a loyal customer of DragonStone, and for good reason. Not only does it offer an extensive range of PC components, but the customer service is also top-notch. Whenever I have a question or need assistance with my order, the support team is always quick to respond and goes above and beyond to ensure my satisfaction.”</p>
+                    <p>"I've been a loyal customer of DragonStone, and for good reason. Not only do they offer an extensive range of organic home decor items, but they have the best pet grooming products as well.”</p>
                 </div>
                 </li>
             </ul>
@@ -156,8 +151,8 @@
     <footer>
         <div class="footer-container">
             <div class="footer-item">
-                <img src="assets/images/DragonStone.svg" alt="logo" />
-                <p>Elevate your space with precision.<br> Discover top-tier components tailored<br> to your needs.Build your dream<br> space with DragonStone.</p>
+                <img src="assets/images/logo.png" alt="logo" />
+                <p>Elevate your space with precision.<br> Discover top-tier eco-friendly items tailored<br> to your needs.Build your dream<br> space with DragonStone.</p>
         
             </div>
             <div class="footer-item">

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DragonStone</title>
         <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="icon" href="../assets/images/DragonStone.svg" type="image/icon type">
+        <link rel="icon" href="../assets/images/logo.png" type="image/icon type">
         <script src="../assets/js/scripts.js"></script>
     </head>
     <body>
@@ -22,19 +22,15 @@
                 </div>
                 <hr>
                 <!-- applied filters -->
+            
                 <div class="filter-detail">
-                    <form action="" method="post">
-                        <label class="main">CPU
-                            <input type="checkbox" checked>
-                            <span class="checkbox-container"></span>
-                        </label>
-                    </form>
+                
                 </div>
                 <!-- brand filter -->
                 <h2 class="fliter-text">Brands</h2>
                 <hr>
                 <div class="filter-detail">
-                    <label class="main">Intel
+                    <label class="main"
                         <input type="checkbox">
                         <span class="checkbox-container"></span>
                     </label>
@@ -90,6 +86,7 @@
 
                 <!-- Pages footer -->
                 <div class="page-footer">
+                
                     <!-- previous button -->
                     <?php  
                         if (isset($_GET["page"])) {

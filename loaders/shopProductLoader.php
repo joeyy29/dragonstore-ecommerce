@@ -21,7 +21,7 @@ foreach($result as $row) { $url = $row["ImageURL"] ;?>
         <div><img src="<?php echo $url ?>" alt="product" class="prd-img"/></div>
         <p class="pr-name"><?php echo $row["ProductName"] ?></p>
         <img src="../assets/images/rating.svg" alt="rating">
-        <p class="pr-price"><?php echo $row["OldPrice"] ?> DT</p>  
+        <p class="pr-price"><?php echo $row["OldPrice"] ?> ZAR</p>  
     </div>
     </a></li>
 

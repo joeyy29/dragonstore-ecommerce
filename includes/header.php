@@ -1,7 +1,7 @@
  <!-- Header -->
  <header>
     <div class="left">
-        <div class="logo"><img src="../assets/images/SetUpSprint.svg" alt="logo" height="30px"/></div>
+        <div class="logo"><img src="../assets/images/logo.png" alt="logo" height="30px"/></div>
         <nav>
             <ul>
                 <li><a href="../homePage.php">Home</a></li>

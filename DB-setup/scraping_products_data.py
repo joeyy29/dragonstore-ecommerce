@@ -94,7 +94,7 @@ cnx = mysql.connector.connect(
         user='root',
         port='3306', # check if mysql is running on port 3307 on your computer
         password='',
-        database='setupsprint_ecommerce_website'
+        database='DragonStone_ecommerce_website'
 )
 
 cursor = cnx.cursor()

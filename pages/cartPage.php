@@ -6,7 +6,7 @@
         <title>DragonStone</title>
         <link rel="stylesheet" href="../assets/css/style1.css">
         <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="icon" href="../assets/images/DragonStone.svg" type="image/icon type">     
+        <link rel="icon" href="../assets/images/logo.png" type="image/icon type">     
     </head>
     <body>
        <?php include "../includes/header.php" ?>
@@ -29,10 +29,21 @@
                         <h5>Subtotal</h5>
                         <h4><?php echo $before_discount ?> ZAR</h4>
                     </div>
+                    <!-- FIX APPLIED HERE -->
                     <div class="sum">
-                        <h5>-<?php echo($per>100)?0:$per?>%</h5>
-                        <div class="discount-price">-<?php echo $discounted ?> ZAR</div>
+                        <!-- Use a standard label like 'Discount' -->
+                        <h5>Discount 
+                            <!-- Display the percentage neatly, limited to two decimal places -->
+                            <?php 
+                                // Added number_format to fix the excessive decimals
+                                $display_per = ($per > 100) ? 0 : number_format($per, 2);
+                                echo "($display_per%)";
+                            ?>
+                        </h5>
+                        <!-- Display the discounted amount clearly as a negative value -->
+                        <div class="discount-price">-<?php echo number_format($discounted, 2) ?> ZAR</div>
                     </div>
+                    <!-- END FIX -->
                     <div class="sum">
                         <h5>Delivery Fee</h5>
                         <h4 >100 ZAR</h4>
