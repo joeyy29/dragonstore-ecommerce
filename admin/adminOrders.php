@@ -53,17 +53,17 @@
                         <th>Date&Time</th>
                         <th>Price</th>
                         <th>Quantity</th>
-                        <th>STATUT</th>
+                        <th>STATUS</th>
                     </tr>
                     <tr>
-                        <td>Payment from Bonnie Green</td>
+                        <td>Payment from Tariro Sango</td>
                         <td>1005</td>
-                        <td>feb 13,2024</td>
-                        <td>$1700</td>
+                        <td>Aug 16,2025</td>
+                        <td>R18 950</td>
                         <td>1</td>
                         <td >
                           <div class="stat">
-                            delivred
+                            delivered
                           </div>
                         </td>
                     </tr>

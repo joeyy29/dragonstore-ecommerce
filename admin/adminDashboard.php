@@ -57,7 +57,7 @@
         </div>
         <div class="rr">
           <p>Total Earnings</p>
-          <h1>350.4 DT</h1>
+          <h1>1,275,350.4 ZAR</h1>
         </div>
         
       </div>
@@ -67,13 +67,13 @@
         </div>
         <div class="rr">
           <p>This month</p>
-          <h1>642.39 DT</h1>
+          <h1>17 642.39 ZAR</h1>
         </div>
         
       </div>
       <div class="col2">
         <p> Sales</p>
-        <h1>574.34 DT</h1>
+        <h1>9574.34 ZAR</h1>
         <div class="perc">
           <h3 id="a">+23% </h3>
           <h3 id="b"> since last month </h3>
@@ -83,7 +83,7 @@
       </div>
       <div class="col2">
         <p> Costumers </p>
-        <h1>250</h1>
+        <h1>7850</h1>
         <div class="perc">
           <h3 id="a">+15% </h3>
           <h3 id="b"> since last month </h3>
@@ -92,7 +92,7 @@
       </div>
       <div class="col2">
         <p> Orders this month</p>
-        <h1>125</h1>
+        <h1>554</h1>
         <div class="perc">
           <h3 id="a">+15% </h3>
           <h3 id="b"> since last month </h3>
@@ -100,13 +100,13 @@
       </div>
     </div>
     <div class="tbl2">
-      <img src="../assets/images/Earnings Chart.png" width='100%'>
+  
     </div>
     <table class="tbl3">
       <th colspan="2">Most Selled Products </th>
       <tr>
-        <td>ASUS ROG Strix B550-F Gaming Motherboard</td>
-        <td>70 sales</td>
+        <td>Plastic Planter Water-resistant upcycled plastic planter, large | Yellows</td>
+        <td>700 sales</td>
       </tr>
     </table>
   </div>
