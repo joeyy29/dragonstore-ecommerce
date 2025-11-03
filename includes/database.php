@@ -1,7 +1,7 @@
     <?php
 
 $host = 'localhost' ;
-$dbname = 'DragonStone_ecommerce_website';
+$dbname = 'if0_40316449_dragonstone_ecommerce_website';
 $username = 'root';
 $password = '';
 
